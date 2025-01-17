@@ -1,3 +1,4 @@
+
 // Location Data
 const locations = {
     1: {
@@ -253,26 +254,50 @@ const locations = {
 };
 
   
-  // Hover Function
-  document.querySelectorAll(".map-point").forEach((point) => {
+function navigateToLocation(id) {
+    const location = locations[id];
+    const mapPoint = document.querySelector(`.map-point[data-id='${id}']`);
+
+    if (mapPoint && location) {
+        // Scroll to map point
+        mapPoint.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+
+        // Display popup
+        const popup = document.getElementById("popup");
+        const rect = mapPoint.getBoundingClientRect();
+
+        popup.style.left = `${rect.left + window.scrollX}px`;
+        popup.style.top = `${rect.top + window.scrollY - popup.offsetHeight}px`;
+
+        document.getElementById("popup-img").src = location.img;
+        document.getElementById("popup-title").textContent = location.name;
+        document.getElementById("popup-desc").textContent = location.desc;
+
+        popup.style.display = "block";
+    }
+}
+
+// Event listeners for hover interactions
+document.querySelectorAll(".map-point").forEach((point) => {
     point.addEventListener("mouseenter", (e) => {
-      const id = e.target.dataset.id;
-      const popup = document.getElementById("popup");
-      const location = locations[id];
-  
-      popup.style.left = `${e.pageX}px`;
-      popup.style.top = `${e.pageY}px`;
-  
-      document.getElementById("popup-img").src = location.img;
-      document.getElementById("popup-title").textContent = location.name;
-      document.getElementById("popup-desc").textContent = location.desc;
-  
-      popup.style.display = "block";
+        const id = e.target.dataset.id;
+        const popup = document.getElementById("popup");
+        const location = locations[id];
+
+        popup.style.left = `${e.pageX}px`;
+        popup.style.top = `${e.pageY}px`;
+
+        document.getElementById("popup-img").src = location.img;
+        document.getElementById("popup-title").textContent = location.name;
+        document.getElementById("popup-desc").textContent = location.desc;
+
+        popup.style.display = "block";
     });
-  
+
     point.addEventListener("mouseleave", () => {
-      document.getElementById("popup").style.display = "none";
+        document.getElementById("popup").style.display = "none";
     });
-  });
-  
+});
+
+
 // Code made by Justin James Corral BSIT 3-3 2024 
