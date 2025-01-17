@@ -1,147 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PUP Interactive Map</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="main-container"> 
-     <h2>PUP Kiosk 2024</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PUP Interactive Map</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main-container">
+            <h2>PUP Kiosk 2024</h2>
 
-    <!-- Map Container -->
-    <div class="map-container">
-      <img src="images/PUPmap.png" alt="PUP Campus Map">
-  
-      <!-- Interactive Points -->
-      <div class="map-point" style="top: 51%; left: 37%;" data-id="1">1</div>
-      <div class="map-point" style="top: 8%; left: 26%;" data-id="2">2</div>
-      <div class="map-point" style="top: 92%; left: 33%;" data-id="3">3</div>
-      <div class="map-point" style="top: 40%; left: 67%;" data-id="4">4</div>
-      <div class="map-point" style="top: 42%; left: 49%;" data-id="5">5</div>
-      <div class="map-point" style="top: 38%; left: 17%;" data-id="6">6</div>
-      <div class="map-point" style="top: 88%; left: 90%;" data-id="7">7</div>
-      <div class="map-point" style="top: 57%; left: 52%;" data-id="8">8</div>
-      <div class="map-point" style="top: 61%; left: 65%;" data-id="9">9</div>
-      <div class="map-point" style="top: 14%; left: 72%;" data-id="10">10</div>
-      <div class="map-point" style="top: 78%; left: 48%;" data-id="11">11</div>
-      <div class="map-point" style="top: 23%; left: 17%;" data-id="12">12</div>
-      <div class="map-point" style="top: 43%; left: 41%;" data-id="13">13</div>
-      <div class="map-point" style="top: 67%; left: 36%;" data-id="14">14</div>
-      <div class="map-point" style="top: 79%; left: 35%;" data-id="15">15</div>
-      <div class="map-point" style="top: 61%; left: 44%;" data-id="16">16</div>
-      <div class="map-point" style="top: 74%; left: 26%;" data-id="17">17</div>
-      <div class="map-point" style="top: 60%; left: 27%;" data-id="18">18</div>
-      <div class="map-point" style="top: 43%; left: 90%;" data-id="19">19</div>
-      <div class="map-point" style="top: 53%; left: 54%;" data-id="20">20</div>
-      <div class="map-point" style="top: 23%; left: 34%;" data-id="21">21</div>
-      <div class="map-point" style="top: 29%; left: 63%;" data-id="22">22</div>
-      <div class="map-point" style="top: 92%; left: 46%;" data-id="23">23</div>
-      <div class="map-point" style="top: 71%; left: 75%;" data-id="24">24</div>
-      <div class="map-point" style="top: 16%; left: 47%;" data-id="25">25</div>
-      <div class="map-point" style="top: 75%; left: 7%;" data-id="26">26</div>
-      <div class="map-point" style="top: 92%; left: 21%;" data-id="27">27</div>
-      <div class="map-point" style="top: 59%; left: 60%;" data-id="28">28</div>
-      <div class="map-point" style="top: 55%; left: 22%;" data-id="29">29</div>
-      <div class="map-point" style="top: 62%; left: 15%;" data-id="30">30</div>
-      <div class="map-point" style="top: 47%; left: 90%;" data-id="31">31</div>
-      <div class="map-point" style="top: 42%; left: 55%;" data-id="32">32</div>
-      <div class="map-point" style="top: 10%; left: 8%;" data-id="33">33</div>
-      <div class="map-point" style="top: 39%; left: 90%;" data-id="34">34</div>
-      <div class="map-point" style="top: 53%; left: 17%;" data-id="35">35</div>
-      <div class="map-point" style="top: 46%; left: 70%;" data-id="36">36</div>
-      <div class="map-point" style="top: 14%; left: 57%;" data-id="37">37</div>
-      <div class="map-point" style="top: 29%; left: 74%;" data-id="38">38</div>
-      <div class="map-point" style="top: 16%; left: 27%;" data-id="39">39</div>
-      <div class="map-point" style="top: 29%; left: 91%;" data-id="40">40</div>
-      <div class="map-point" style="top: 15%; left: 87%;" data-id="41">41</div>
-      <div class="map-point" style="top: 46%; left: 87%;" data-id="42">42</div>
-      <div class="map-point" style="top: 45%; left: 65%;" data-id="43">43</div>
-      <div class="map-point" style="top: 36%; left: 85%;" data-id="44">44</div>
-      <div class="map-point" style="top: 64%; left: 59%;" data-id="45">45</div>
-      <div class="map-point" style="top: 46%; left: 83%;" data-id="46">46</div>
-      <div class="map-point" style="top: 62%; left: 36%;" data-id="47">47</div>
-      <div class="map-point" style="top: 69%; left: 17%;" data-id="48">48</div>
-      <div class="map-point" style="top: 84%; left: 36%;" data-id="49">49</div>
-      <div class="map-point" style="top: 80%; left: 19%;" data-id="50">50</div>
-      </div>
-  </div>
+            <!-- Map Container -->
+            <div class="map-container">
+                <img src="images/PUPmap.png" alt="PUP Campus Map" />
+            </div>
+        </div>
 
+        <!-- Popup for Information -->
+        <div class="popup" id="popup">
+            <img id="popup-img" src="" alt="Location Image" />
+            <h3 id="popup-title"></h3>
+            <p id="popup-desc"></p>
+        </div>
 
-  <!-- Popup for Information -->
-  <div class="popup" id="popup">
-    <img id="popup-img" src="" alt="Location Image">
-    <h3 id="popup-title"></h3>
-    <p id="popup-desc"></p>
-  </div>
+        <!-- List of Numbered Locations -->
+        <div class="name-list-container">
+            <h2>List of Locations</h2>
+            <div class="column" id="location-list"></div>
+        </div>
 
-<!-- List of Numbered Locations -->
-<div class="name-list-container">
-  <h2>List of Locations</h2>
-    <!-- First Row -->
-    <div class="column">
-      <span class="locName" data-id="1">1. Amphitheater</span>
-      <span>2. Banda Kawayan, Sining Lahi Headquarters</span>
-      <span>3. Building and Grounds Maintenance Office</span>
-      <span>4. Catwalk</span>
-      <span>5. Centennial Monument</span>
-      <span>6. Charlie Del Rosario Student Development Center</span>
-      <span>7. East Gate</span>
-      <span>8. Flag Pole</span>
-      <span>9. Grandstand</span>
-      <span>10. Gymnasium</span>
-      <span>11. Interfaith Chapel</span>
-      <span>12. Laboratory High School</span>
-      <span>13. Lagoon</span>
-      <span>14. Main Building - Dome</span>
-      <span>15. Main Building - East Wing</span>
-      <span>16. Main Building - North Wing</span>
-      <span>17. Main Building - South Wing</span>
-      <span>18. Main Building - West Wing</span>
-      <span>19. Main Gate</span>
-      <span>20. Nemensio E. Prudente Freedom Park</span>
-      <span>21. Ninoy Aquino Library and Learning Resources Center</span>
-      <span>22. Open Court</span>
-      <span>23. Nutrition and Food Science Building</span>
-      <span>24. Oval Open Field</span>
-      <span>25. P.E. Building</span>
-      <span>26. Pasig River</span>
-      <span>27. Pasig River Ferry (Sta. Mesa Station)</span>
-      <span>28. Proposed Access Road</span>
-      <span>29. Public Restroom</span>
-      <span>30. PUP Linear Park</span>
-      <span>31. PUP Mural and Shrine of Heroism</span>
-      <span>32. PUP Obelisk (Mabini Monument)</span>
-      <span>33. PUP Property Building and Motorpool</span>
-      <span>34. PUPylon</span>
-      <span>35. Sampaguita Building</span>
-      <span>36. Student Pavilion</span>
-      <span>37. Swimming Pool</span>
-      <span>38. Tennis Open Court</span>
-      <span>39. Water Tank</span>
-      <span>40. West Gate</span>
-      <span>41. Engineering And Science Research Center</span>
-      <span>42. Information Desk</span>
-      <span>43. PUP Souvenir Shop</span>
-      <span>44. Visitors Lounge</span>
-      <span>45. Museo Ni Apolinario Mabini</span>
-      <span>46. Motor Parking</span>
-      <span>47. Public Assistance & Complaint Desk</span>
-      <span>48. PUP Pumping Station</span>
-      <span>49. Medical Clinic</span>
-      <span>50. Famo Building</span>
-    </div>
-</div>
+        <footer>Justin James Corral 2024</footer>
 
-<footer>
-  Justin James Corral 2024
-</footer>
-
-
-
-  <script src="scripts.js"></script>
-</body>
+        <script src="scripts.js"></script>
+    </body>
 </html>
 
-   <!-- Code made by Justin James Corral BSIT 3-3 2024 -->
+<!-- Code made by Justin James Corral BSIT 3-3 2024 -->
